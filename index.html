@@ -37,7 +37,7 @@
           <a
             href="https://oversee.streamlit.app"
             target="_blank"
-            class="flex gap-1 items-center text-sm font-normal text-gray-800 hover:text-gray-900 transition duration-300"
+            class="icon-label flex gap-1 items-center text-sm font-normal text-gray-800 hover:text-gray-900 transition duration-300"
           >
             <i class="fa-solid fa-sailboat fa-md"></i>
             Try the live playground!
@@ -63,16 +63,17 @@
           <a
             href="https://oversee.streamlit.app"
             target="_blank"
-            class="flex items-center gap-2 py-4 text-sm font-medium px-4 text-gray-800 hover:text-dark-grey-900 transition duration-300"
+            class="icon-label flex items-center gap-2 py-4 text-sm font-medium px-4 text-gray-800 hover:text-dark-grey-900 transition duration-300"
           >
             <i class="fa-solid fa-sailboat fa-bounce fa-xl"></i>
             Try the live playground!
           </a>
-          <button
+          <a
+            href="#get-started"
             class="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300"
           >
             Get started
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -81,11 +82,11 @@
   <div id="banner" class="container flex flex-col items-center justify-center mx-auto mt-16 md:mt-0 py-12 lg:items-start">
     <div class="flex flex-col w-4/5">
       <div class="flex items-center mb-4">
-        <h4 class="ml-2 text-sm font-bold tracking-widest text-primary">
+        <h4 class="text-sm font-bold tracking-widest text-primary">
           From
-          <span class="text-primary px-2"><i class="fa-solid fa-graduation-cap"></i> Students</span>
+          <span class="icon-label text-primary px-2"><i class="fa-solid fa-graduation-cap"></i> Students</span>
           to
-          <span class="text-primary px-2"><i class="fa-solid fa-graduation-cap"></i> Students</span>
+          <span class="icon-label text-primary px-2"><i class="fa-solid fa-graduation-cap"></i> Students</span>
         </h4>
       </div>
       <h1 class="mb-8 text-4xl font-extrabold leading-tight text-dark-grey-900 lg:text-6xl">The compass for your<br />Data Science experiments</h1>
@@ -123,8 +124,8 @@
     <div class="flex flex-col w-2/3 mb-10">
       <h2 class="mb-12 font-extrabold text-3xl leading-tight text-start text-dark-grey-900 lg:text-4xl">
         Fetch your
-        <span class="text-grey-700 px-2"><i class="fa-solid fa-sailboat fa-sm"></i> Vessel</span>,<br />and gather
-        <span class="text-primary px-2"><i class="fa-solid fa-scroll fa-sm"></i> Manuscripts</span>
+        <span class="icon-label text-grey-700 px-2"><i class="fa-solid fa-sailboat fa-sm"></i> Vessel</span>,<br />and gather
+        <span class="icon-label text-primary px-2"><i class="fa-solid fa-scroll fa-sm"></i> Manuscripts</span>
       </h2>
       <div class="flex flex-wrap gap-4 w-full">
         <div
@@ -177,15 +178,15 @@
     <div class="flex flex-col w-4/5 mb-10">
       <h2 class="mb-12 font-extrabold text-3xl leading-tight text-start text-dark-grey-900 lg:text-4xl">
         Watch your
-        <span class="text-primary px-2"><i class="fa-solid fa-flask fa-shake fa-sm"></i> experiments</span>
+        <span class="icon-label text-primary px-2"><i class="fa-solid fa-flask fa-shake fa-sm"></i> experiments</span>
         and
-        <span class="text-primary px-2"><i class="fa-solid fa-gem fa-bounce fa-sm"></i> discoveries</span>
+        <span class="icon-label text-primary px-2"><i class="fa-solid fa-gem fa-bounce fa-sm"></i> discoveries</span>
         self-organize...
       </h2>
       <div class="flex flex-col gap-4 border border-dark-grey-500 border-bottom-none rounded-2xl px-12 py-16">
         <div class="flex flex-col gap-6">
           <div class="flex flex-wrap gap-3 items-center text-xl">
-            <span class="flex gap-3 items-center font-medium text-grey-700">
+            <span class="icon-label flex gap-3 items-center font-medium text-grey-700">
               <i class="fa-solid fa-scroll fa-sm"></i>
               Manuscript:</span
             >
@@ -193,12 +194,12 @@
           </div>
 
           <div class="flex flex-wrap gap-3 items-center text-xl">
-            <span class="flex gap-3 items-center font-medium text-grey-700">
+            <span class="icon-label flex gap-3 items-center font-medium text-grey-700">
               <i class="fa-solid fa-flask-vial fa-sm"></i>
               Research objective:</span
             >
             <span class="text-grey-100"
-              >Briefly investigate how ROC and Precision-Recall curve play role in novelty detection and how they differ.</span
+              >Briefly investigate how the ROC and Precision-Recall curves play a role in novelty detection and how they differ.</span
             >
           </div>
         </div>
@@ -207,27 +208,28 @@
           class="flex flex-col lg:flex-row gap-0 self-center text-lg my-12 border border-purple-blue-500 rounded-lg cursor-default overflow-hidden"
         >
           <button
-            class="tab-btn flex gap-2 items-center px-8 py-3 hover:bg-purple-blue-500 hover:text-white transition duration-200 bg-purple-blue-500 text-white"
+            class="icon-label tab-btn flex gap-2 items-center px-8 py-3 hover:bg-purple-blue-500 hover:text-white transition duration-200 bg-purple-blue-500 text-white"
             data-target="lab"
           >
             <i class="fa-solid fa-flask fa-sm"></i>
-            Cabin Laboratory
+            <span class="inline-block md:hidden">Laboratory</span>
+            <span class="hidden md:inline-block">Cabin Laboratory</span>
           </button>
           <button
-            class="tab-btn flex gap-2 items-center px-8 py-3 hover:bg-purple-blue-500 hover:text-white transition duration-200"
+            class="icon-label tab-btn flex gap-2 items-center px-8 py-3 hover:bg-purple-blue-500 hover:text-white transition duration-200"
             data-target="journal"
           >
             <i class="fa-solid fa-book fa-sm"></i>
             Journal
           </button>
           <button
-            class="tab-btn flex gap-2 items-center px-8 py-3 hover:bg-purple-blue-500 hover:text-white transition duration-200"
+            class="icon-label tab-btn flex gap-2 items-center px-8 py-3 hover:bg-purple-blue-500 hover:text-white transition duration-200"
             data-target="results"
           >
             <i class="fa-solid fa-vials fa-sm"></i>
-            Results and
             <i class="fa-solid fa-shuffle fa-sm"></i>
-            Future Directions
+            <span class="inline-block md:hidden">Results</span>
+            <span class="hidden md:inline-block">Results and Future Directions</span>
           </button>
         </div>
 
@@ -249,11 +251,15 @@
       <h2 class="mb-12 font-extrabold text-3xl leading-tight text-start text-purple-blue-600 lg:text-4xl">Get started<br />on your machine</h2>
       <div class="flex flex-col gap-4 w-full">
         <code class="bg-grey-200 p-6 rounded-2xl">
-          <span class="text-primary">$</span> git clone https://github.com/matthew-balogh/streamlit-oversee.git oversee-my-data-science-project
+          <span class="text-primary">$</span> git clone https://github.com/matthew-balogh/streamlit-oversee.git
+          <span class="text-purple-blue-600">oversee-my-data-science-project</span>
         </code>
         <code class="bg-grey-200 p-6 rounded-2xl">
-          <span class="text-primary">$</span> cd oversee-my-data-science-project <br /><span class="text-primary">$</span> pip install -r
-          requirements.txt <br /><span class="text-primary">$</span> streamlit run oversee_app.py
+          <span class="text-primary">$</span> cd <span class="text-purple-blue-600">oversee-my-data-science-project</span><br /><span
+            class="text-primary"
+            >$</span
+          >
+          pip install -r requirements.txt <br /><span class="text-primary">$</span> streamlit run oversee_app.py
         </code>
       </div>
     </div>

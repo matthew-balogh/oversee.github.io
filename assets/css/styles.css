@@ -7,7 +7,7 @@
 }
 
 .container {
-    min-height: max-content;
+    min-height: fit-content;
 }
 
 .cursor-default {
@@ -34,6 +34,10 @@
 
 .text-red {
     color: #e84855
+}
+
+.icon-label {
+    white-space: nowrap;
 }
 
 #navbar {
